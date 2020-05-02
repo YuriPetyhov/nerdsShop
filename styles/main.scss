@@ -1,5 +1,12 @@
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+@import "common";
+@import "header";
+@import "slider";
+@import "advantages";
+@import "about";
+@import "partenrs";
+@import "partenrs";
+@import "card";
+@import "catalog";
+
+

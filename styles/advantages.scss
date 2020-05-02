@@ -1,0 +1,47 @@
+.advantages {
+   display: flex;
+   justify-content: space-between;
+   padding: 8rem 0;
+   border-bottom: 2px solid #eeeeee;
+
+   &__item {
+     color: $mainColor;
+     font-family: $Roboto;
+     max-width: 300px;
+
+     img {
+       max-width: 100%;
+     }
+
+     .title {
+       margin: 10px 0;
+     }
+
+     .sub-title {
+       color: #283136;
+       font-weight: 400;
+
+     }
+
+     .btn {
+       width: 160px;
+       height: 50px;
+       font-weight: 500;
+       margin-top: 35px;
+
+       &--web {
+         background-color: #fb565a;
+       }
+
+       &--app {
+         background-color: #00ca74;
+       }
+
+       &--preview {
+         background-color: #efc84a;
+       }
+
+     }
+   }
+
+ }

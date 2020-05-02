@@ -1,0 +1,18 @@
+.catalog {
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  aside {
+    flex-basis: 20%;
+
+  }
+  main {
+    flex-basis: 70%;
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+  }
+
+}

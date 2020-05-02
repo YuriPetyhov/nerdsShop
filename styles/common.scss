@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+$Roboto : 'Roboto', sans-serif;
+$mainColor:  #000000;
+$subTittleColor: #283136;
+
+html, body {
+  font-size: 10px;
+}
+
+.top-block {
+  background: #eeeeee;
+}
+
+.container {
+   max-width: 1160px;
+   box-sizing: border-box;
+   padding: 0 10px;
+   margin: 0 auto;
+ }
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-family: $Roboto;
+}

@@ -1,0 +1,27 @@
+header {
+   font-family: $Roboto;
+   font-size: 1.6rem;
+   padding: 50px 0px 10px 0px ;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   nav, .basket {
+     margin-top: 25px;
+     font-weight: bold;
+     text-transform: uppercase;
+     color: $mainColor;
+   }
+
+   nav {
+     width: 40%;
+     display: flex;
+     justify-content: space-between;
+
+     a {
+       color: inherit;
+     }
+
+   }
+
+ }
