@@ -1,1 +1,275 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none; }
+
+html, body {
+  font-size: 10px; }
+
+.top-block {
+  background: #eeeeee; }
+
+.container {
+  max-width: 1160px;
+  box-sizing: border-box;
+  padding: 0 10px;
+  margin: 0 auto; }
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif; }
+
+header {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  padding: 50px 0px 10px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  header nav, header .basket {
+    margin-top: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000000; }
+  header nav {
+    width: 40%;
+    display: flex;
+    justify-content: space-between; }
+    header nav a {
+      color: inherit; }
+
+.top-slider {
+  position: relative; }
+  .top-slider .btn_label {
+    position: absolute;
+    top: 85%; }
+    .top-slider .btn_label:before {
+      content: '';
+      position: relative;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background: white;
+      border-radius: 100%; }
+    .top-slider .btn_label--first {
+      left: 50%; }
+    .top-slider .btn_label--second {
+      left: 55%; }
+    .top-slider .btn_label--third {
+      left: 60%; }
+  .top-slider .slide-btn {
+    position: absolute;
+    top: -999999999999px; }
+    .top-slider .slide-btn--first:checked + label:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -55%);
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border: 3px solid #c1c1c1;
+      border-radius: 100%;
+      background: inherit; }
+    .top-slider .slide-btn--first:checked ~ .top-slider__slide-first {
+      display: block; }
+    .top-slider .slide-btn--second:checked + label:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -55%);
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border: 3px solid #c1c1c1;
+      border-radius: 100%; }
+    .top-slider .slide-btn--second:checked ~ .top-slider__slide-second {
+      display: block; }
+    .top-slider .slide-btn--third:checked + label:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -55%);
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border: 3px solid #c1c1c1;
+      border-radius: 100%; }
+    .top-slider .slide-btn--third:checked ~ .top-slider__slide-third {
+      display: block; }
+  .top-slider__slide {
+    padding: 67px 0 80px 0;
+    display: none; }
+    .top-slider__slide-first {
+      background: url("../img/slide1.png");
+      background-repeat: no-repeat;
+      background-position: right; }
+    .top-slider__slide-second {
+      background: url("../img/slide2.png");
+      background-repeat: no-repeat;
+      background-position: right; }
+    .top-slider__slide-third {
+      background: url("../img/slide3.png");
+      background-repeat: no-repeat;
+      background-position: right; }
+    .top-slider__slide .content {
+      max-width: 515px;
+      font-family: "Roboto", sans-serif;
+      font-size: 1.6rem; }
+      .top-slider__slide .content__title {
+        color: #000000;
+        font-size: 55px;
+        font-weight: 500;
+        line-height: 55px;
+        margin-bottom: 2.8rem; }
+      .top-slider__slide .content__sub-title {
+        margin-bottom: 4.8rem; }
+      .top-slider__slide .content__btn {
+        width: 240px;
+        height: 50px;
+        background-color: #fb565a;
+        font-weight: 500;
+        line-height: 18px;
+        color: #ffffff; }
+
+.advantages {
+  display: flex;
+  justify-content: space-between;
+  padding: 8rem 0;
+  border-bottom: 2px solid #eeeeee; }
+  .advantages__item {
+    color: #000000;
+    font-family: "Roboto", sans-serif;
+    max-width: 300px; }
+    .advantages__item img {
+      max-width: 100%; }
+    .advantages__item .title {
+      margin: 10px 0; }
+    .advantages__item .sub-title {
+      color: #283136;
+      font-weight: 400; }
+    .advantages__item .btn {
+      width: 160px;
+      height: 50px;
+      font-weight: 500;
+      margin-top: 35px; }
+      .advantages__item .btn--web {
+        background-color: #fb565a; }
+      .advantages__item .btn--app {
+        background-color: #00ca74; }
+      .advantages__item .btn--preview {
+        background-color: #efc84a; }
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 8rem;
+  padding-bottom: 8rem; }
+  .about .about__item--content {
+    max-width: 650px; }
+    .about .about__item--content .title {
+      font-size: 4.5rem;
+      font-family: "Roboto", sans-serif;
+      font-weight: 500;
+      color: #000000; }
+    .about .about__item--content .sub-title {
+      font-size: 1.6rem;
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      color: #283136;
+      margin: 4.7rem 0; }
+    .about .about__item--content .list-title {
+      font-size: 1.6rem;
+      font-family: "Roboto", sans-serif;
+      font-weight: bold;
+      color: #000000;
+      text-transform: uppercase;
+      margin-bottom: 3.3rem; }
+    .about .about__item--content .list {
+      font-family: "Roboto", sans-serif;
+      font-size: 1.6rem;
+      font-weight: 400; }
+      .about .about__item--content .list li {
+        display: flex;
+        align-items: center;
+        padding: 1rem 0; }
+        .about .about__item--content .list li:before {
+          content: '';
+          display: inline-block;
+          width: 25px;
+          height: 2px;
+          background: red;
+          margin-right: 10px; }
+  .about .about__item--statistic {
+    color: #000000;
+    font-weight: 700; }
+    .about .about__item--statistic .title {
+      font-size: 1.6rem;
+      font-family: "Roboto", sans-serif;
+      text-transform: uppercase;
+      text-align: end; }
+    .about .about__item--statistic .flex-wrap {
+      display: flex;
+      justify-content: space-between; }
+    .about .about__item--statistic .static-number {
+      display: inline-block; }
+      .about .about__item--statistic .static-number__number {
+        font-size: 4.5rem; }
+      .about .about__item--statistic .static-number__procent {
+        font-size: 2rem;
+        vertical-align: top; }
+      .about .about__item--statistic .static-number__subtitle {
+        color: #283136;
+        font-family: "Roboto", sans-serif;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 18px; }
+
+.partners {
+  display: flex;
+  justify-content: space-between; }
+  .partners__img {
+    opacity: .2; }
+
+.partners {
+  display: flex;
+  justify-content: space-between; }
+  .partners__img {
+    opacity: .2; }
+
+.card {
+  background-size: 100% 100%;
+  min-height: 575px;
+  position: relative;
+  overflow: hidden;
+  width: 45%;
+  margin-bottom: 1rem; }
+  .card__up-block {
+    width: 100%;
+    height: 231px;
+    position: absolute;
+    bottom: -100%;
+    background: #eeeeee; }
+  .card:hover .card__up-block {
+    bottom: 0; }
+
+.catalog .container {
+  display: flex;
+  justify-content: space-between; }
+.catalog aside {
+  flex-basis: 20%; }
+.catalog main {
+  flex-basis: 70%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+
+/*# sourceMappingURL=main.css.map */

@@ -3,15 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nerds website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
-    <header>
-        <div class="logo"></div>
-        <nav></nav>
-        <div class="basket"></div>
-    </header>    
-    <script src="./script/index.js"></script>
+    <div class="top-block">
+        <div class="container">
+            <header>
+                <h1 class="logo">
+                    <img src="./img/logo.png" alt="logo">
+                </h1>
+                <nav>
+                    <a href="#">Студия</a>
+                    <a href="#">Клиенты</a>
+                    <a href="#">Магазин</a>
+                    <a href="#">Контакты</a>
+                </nav>
+                <div class="basket">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>корзина</span>
+                </div>
+            </header>
+            <div class="top-slider">
+                <input type="radio" name="slider" class="slide-btn slide-btn--first" id="btn_firts" checked>
+                <label for="btn_firts" class="btn_label btn_label--first"></label>
+                <input type="radio" name="slider" class="slide-btn slide-btn--second" id="btn_second">
+                <label for="btn_second" class="btn_label btn_label--second"></label>
+                <input type="radio" name="slider" class="slide-btn slide-btn--third" id="btn_third">
+                <label for="btn_third" class="btn_label btn_label--third"></label>
+                <div class="top-slider__slide top-slider__slide-first">
+                    <div class="content">
+                        <div class="content__title">
+                            <p>Долго, дорого</p>
+                            скрупулезно.
+                        </div>
+                        <div class="content__sub-title">
+                            <p>Математически выверенный дизайн</p>
+                            для вашего сайта или мобильного приложения.
+                        </div>
+                        <a href="#" class="btn content__btn">
+                            узнать больше
+                        </a>
+                 </div>
+                </div>
+                <div class="top-slider__slide top-slider__slide-second">
+                    <div class="content">
+                        <div class="content__title">
+                            <p>Любим математику</p> как никто другой
+                        </div>
+                        <div class="content__sub-title">
+                           <p>Никакого креатива, только математические формулы</p>
+                            для расчета идеальных пропорций.
+                        </div>
+                        <a href="#" class="btn btn content__btn">
+                            узнать больше
+                        </a>
+                    </div>
+                </div>
+                <div class="top-slider__slide top-slider__slide-third">
+                    <div class="content">
+                        <div class="content__title">
+                           <p>Только ночь,</p>
+                            только хардкор
+                        </div>
+                        <div class="content__sub-title">
+                            <p>Работать днем, как все? Мы против этого.</p>
+                            Ближе к полуночи работа только начинается.
+                        </div>
+                        <a href="#" class="btn content__btn">
+                            узнать больше
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <section class="advantages">
+            <div class="advantages__item">
+                <img src="./img/illustration-1.jpg.png" alt="web">
+                <h2 class="title">Веб-сайты</h2>
+                <p class="sub-title">Мир никогда не будет прежним</p>
+                <p class="sub-title">после того как увидит ваш сайт!</p>
+                <a href="#" class="btn btn--web">заказать</a>
+            </div>
+            <div class="advantages__item">
+                <img src="./img/illustration-2.jpg.png" alt="app">
+                <h2 class="title">Приложения</h2>
+                <p class="sub-title">Покорите топ-10 приложений </p>
+                <p class="sub-title">в AppStore и Google Play</p>
+                <a href="#" class="btn btn--app">заказать</a>
+            </div>
+            <div class="advantages__item">
+                <img src="./img/illustration-3.jpg.png" alt="preview">
+                <h2 class="title">Презентации</h2>
+                <p class="sub-title">Вы даже не подозреваете,</p>
+                <p class="sub-title">насколько вы изумительны!</p>
+                <a href="#" class="btn btn--preview">заказать</a>
+            </div>
+        </section>
+        <section class="about">
+            <div class="about__item about__item--content">
+                <p class="title">
+                    <span>Мы — маленькая, но гордая</span>
+                    дизайн-студия из Краснодара.
+                </p>
+                <p class="sub-title">
+                    <span>Исповедуем принципы минимализма и чистоты. Ставим математический расчет</span>
+                    превыше креатива. Работаем не покладая рук, как роботы.
+                </p>
+                <p class="list-title">
+                    Выполняем заказы на разработку:
+                </p>
+                <ul class="list">
+                    <li>Веб-сайтов любой сложности</li>
+                    <li>Мобильных приложений для iOS и Android</li>
+                    <li>Слайдшоу и видео для корпоративных презентаций</li>
+                </ul>
+            </div>
+            <div class="about__item about__item--statistic">
+                <img src="./img/nerds-illustration.jpg.png" alt="nerds">
+                <p class="title">с 2004 года Любим точность во всем:</p>
+                <div class="flex-wrap">
+                    <div class="static-number">
+                        <span class="static-number__number">146<span class="static-number__procent">%</span></span>
+                        <p class="static-number__subtitle">Уровень  </p>
+                        <p class="static-number__subtitle">самоотдачи  </p>
+                    </div>
+                    <div class="static-number">
+                        <span class="static-number__number">100<span class="static-number__procent">%</span></span>
+                        <p class="static-number__subtitle"> Соблюдение  </p>
+                        <p class="static-number__subtitle"> сроков  </p>
+                    </div>
+                    <div class="static-number">
+                        <span class="static-number__number">50<span class="static-number__procent">%</span></span>
+                        <p class="static-number__subtitle">Минимальная </p>
+                        <p class="static-number__subtitle">предоплата </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="partners">
+            <div class="partners__item"><img src="./img/logo-1.jpg" alt="html academy" class="partners__img"></div>
+            <div class="partners__item"><img src="./img/logo-2.jpg" alt="borodinksi" class="partners__img"></div>
+            <div class="partners__item"><img src="./img/logo-3.jpg" alt="pink" class="partners__img"></div>
+            <div class="partners__item"><img src="./img/logo-4.png" alt="mishka" class="partners__img"></div>
+        </section>
+    </div>
+<script src="./script/index.js"></script>
 </body>
 </html>
