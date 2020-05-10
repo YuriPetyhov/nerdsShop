@@ -52,10 +52,25 @@
             </form>
         </aside>
         <main id="catalog__cards">
+                <div class="catalog__filter">
+                    <span>Сортировать:</span>
+                    <div class="params">
+                        <div class="tabs">
+                            <span id="cost" class="active">По цене</span>
+                            <span id="category">По типо</span>
+                            <span id="title">По названию</span>
+                        </div>
+                        <div class="arrows">
+                            <span id="down" class="active">v</span>
+                            <span id="up"> ^ </span>
+                        </div>
+                    </div>
 
+                </div>
+                <div class="cards"></div>
         </main>
     </div>
 </div>
-<script src="./script/index.js"></script>
+<script src="./script/index.js" type="module"></script>
 </body>
 </html>

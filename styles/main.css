@@ -269,7 +269,18 @@ header {
 .catalog main {
   flex-basis: 70%;
   display: flex;
+  flex-direction: column;
+   }
+.catalog main .cards {
+  display: flex;
   justify-content: space-between;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+}
 
+.catalog__filter {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  font-size: 20px;
+}
 /*# sourceMappingURL=main.css.map */
