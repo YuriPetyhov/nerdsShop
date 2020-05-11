@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/YuriPetyhov/nerdsShop/issues"
   },
-  "homepage": "https://github.com/YuriPetyhov/nerdsShop#readme"
+  "homepage": "https://github.com/YuriPetyhov/nerdsShop#readme",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
 }
